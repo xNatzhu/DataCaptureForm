@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
+    <link rel="stylesheet" href="Css/form.css">
+    <!--Font: chronometer-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;500;600;700;800;900&display=swap" rel="stylesheet">
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+  </head>
+
+<body>
+    <main class="container">
+        <!--FORM-->
+        <form id="form" class="d-flex flex-column align-items-center justify-content-center mt-5 form-container">
+            <div class="row row-cols-2 form-element-context">
+                <div id="clock" class="chronometer-container">
+                    <span id="hours">| </span><span id="minutes"> | </span><span id="seconds"></span>
+                    
+                </div>
+                <div class="col d-flex flex-column align-items-end">
+                    <p id="weatherForm">City:  | 0°</p>
+                </div>
+            </div>
+          <div class="col mb-3 form-element-context">
+            <label for="exampleInputName" class="form-label">Name</label>
+            <input type="name" class="form-control" required id="name" aria-describedby="nameHelp">
+          </div>
+          <div class="col mb-3 form-element-context">
+            <label for="exampleInputName" class="form-label">Birthday Date</label>
+            <input type="date" class="form-control" id="birthdayDate" aria-describedby="dateHelp">
+          </div>
+          <div class="row row-cols-2 mb-3 form-element-context">
+            <div>
+              <label for="exampleInputName" class="form-label">Country</label>
+              <select id="selectElementCountry" class="form-select" aria-label="Default select example">
+                <option selected>---</option>
+              </select>
+            </div>
+            <div>
+              <label for="exampleInputName" class="form-label">Province</label>
+              <select class="form-select" id="selectElementProvince" aria-label="Default select example">
+                <option selected>---</option>
+              </select>
+            </div>
+          </div>
+          <div class="col mb-3 form-element-context">
+            <label for="exampleInputEmail1" class="form-label">Email Address</label>
+            <input type="email" class="form-control" id="emailAddress" required aria-describedby="emailHelp">
+          </div>
+          <button id="buttonForm" type="submit" class="btn btn-form mt-3" data-bs-toggle="modal" data-bs-target="#exampleModal">Submit</button>
+        </form>
+        <div class="d-flex flex-column align-items-center justify-content-center mt-5 mb-3">
+          <h6 class="copyright-technical-test">Technical Test Created by: <a href="https://www.linkedin.com/in/agustin-saravia/" target="_blank" rel="Agustin Saravia">Agustin Nahuel Saravia</a></h6>
+        </div>
+        <div id="createModal">
+        </div>
+    </main>
+    <script type="module" src="/Js/main.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js" integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN" crossorigin="anonymous"></script>
+</body>
+</html>
